@@ -1,22 +1,19 @@
-# synent-task3-EDA-CharmiKhunt
+# Netflix Dataset - Exploratory Data Analysis (EDA)
 
-# Netflix Dataset – Exploratory Data Analysis (EDA)
+## Overview
 
-## Problem Statement
+This project focuses on exploring the Netflix Dataset to understand the content available on Netflix. The analysis helps identify trends, patterns, and useful insights from the data using different charts and graphs.
 
-The purpose of this project is to perform **Exploratory Data Analysis (EDA)** on the Netflix Dataset to identify important trends, patterns, and insights from the data. The analysis focuses on understanding Netflix content distribution, release trends, ratings, and relationships between different variables using statistical analysis and visualizations.
+## Dataset
 
+**Dataset:** Netflix Titles Dataset
 
-## Dataset Details
+The dataset contains information about Netflix Movies and TV Shows.
 
-**Dataset Name:** Netflix Titles Dataset
-
-**Source:** Kaggle
-
-The dataset contains information about Netflix movies and TV shows, including:
+### Features Used
 
 * Title
-* Type (Movie / TV Show)
+* Type
 * Director
 * Cast
 * Country
@@ -26,68 +23,51 @@ The dataset contains information about Netflix movies and TV shows, including:
 * Duration
 * Genre
 
-The dataset is used to analyze content availability and discover meaningful business insights from Netflix data.
-
-
-
-## Approach
-
-The project was completed using **Python, Jupyter Notebook, Pandas, Matplotlib, and Seaborn**.
-
-The following steps were followed during the analysis:
+## Steps Performed
 
 ### 1. Data Loading
 
-The dataset was imported using Pandas and explored to understand its structure, columns, and datatypes.
+The dataset was loaded into Python using Pandas.
 
-### 2. Data Inspection & Cleaning
+### 2. Data Cleaning
 
-* Checked dataset shape and column information.
-* Identified missing values.
-* Removed duplicate records.
-* Filled missing values where required for smoother analysis.
+The data was checked for:
 
-### 3. Summary Statistics
+* Missing values
+* Duplicate records
+* Incorrect data types
 
-Statistical analysis was performed to understand numerical and categorical features using methods like:
+Necessary cleaning was performed before analysis.
 
-* `describe()`
-* `info()`
-* missing value analysis
+### 3. Data Exploration
 
-### 4. Correlation Analysis
+Basic information and summary statistics were generated to understand the dataset better.
 
-Correlation analysis was performed on numerical features to understand relationships between variables using a **heatmap visualization**.
+### 4. Data Visualization
 
-### 5. Trend Identification & Visualization
+Different charts and graphs were created to study:
 
-Several visualizations were created to identify patterns and trends in the dataset:
+* Movies vs TV Shows
+* Content released over the years
+* Top countries producing content
+* Content ratings
+* Monthly content additions
 
-* Movies vs TV Shows distribution
-* Content release trend by year
-* Top contributing countries
-* Content ratings analysis
-* Monthly content addition trend
-* Distribution plots and charts
+### 5. Correlation Analysis
 
-Graphs were created using **Matplotlib** and **Seaborn** for better understanding of the data.
+A heatmap was created to observe relationships between numerical features.
 
----
+## Key Insights
 
-## Results / Key Insights
+Some important findings from the analysis are:
 
-The exploratory analysis revealed several important insights from the Netflix dataset:
+* Movies are available in much larger numbers than TV Shows.
+* Netflix content increased significantly after 2015.
+* The United States contributes the most content on Netflix.
+* TV-MA is one of the most common content ratings.
+* Visualizations helped understand content trends and distribution more clearly.
 
-* **Movies dominate Netflix content**, significantly outnumbering TV Shows.
-* The amount of content released increased rapidly after **2015**, showing strong platform growth.
-* The **United States** contributes the highest amount of Netflix content.
-* **TV-MA** is one of the most commonly appearing content ratings.
-* Visualization techniques helped identify patterns in release years, content categories, and dataset distribution.
-
-Overall, the project demonstrates how Exploratory Data Analysis can be used to convert raw data into meaningful insights using statistics and visual storytelling.
-
-
-## Tools & Technologies Used
+## Technologies Used
 
 * Python
 * Jupyter Notebook
@@ -96,14 +76,15 @@ Overall, the project demonstrates how Exploratory Data Analysis can be used to c
 * Matplotlib
 * Seaborn
 
-
 ## Project Output
 
- Summary Statistics
- Correlation Analysis
- Trend Identification
- Data Visualizations with Graphs
- Insights from Netflix Dataset
+* Data Cleaning
+* Summary Statistics
+* Correlation Analysis
+* Trend Analysis
+* Data Visualizations
+* Insights from Netflix Dataset
 
+## Conclusion
 
-
+This project helped in understanding Netflix content through Exploratory Data Analysis. By using data visualization and basic statistics, meaningful insights were extracted from the dataset, making it easier to understand content trends and patterns.
